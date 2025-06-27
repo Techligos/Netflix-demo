@@ -24,14 +24,39 @@
       border: none;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
     }
     .btn-whatsapp {
       background-color: #25D366;
       border: none;
       color: white;
+      transition: background 0.15s;
     }
-    .btn-whatsapp:hover {
+    .btn-whatsapp:hover,
+    .btn-whatsapp:focus {
       background-color: #1ebe57;
+      color: white;
+    }
+    .section-title {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+    }
+    .lead {
+      font-weight: 500;
+    }
+    footer {
+      background-color: #fff;
+      border-top: 1px solid #ececec;
+    }
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 120px;
+      }
     }
   </style>
 </head>
@@ -40,46 +65,54 @@
   <!-- Header -->
   <section class="text-center py-5 bg-primary-red text-white">
     <div class="container">
-      <h1 class="display-5 fw-bold">Techligo Subscriptions</h1>
+      <h1 class="display-5 fw-bold mb-2">Techligo Subscriptions</h1>
       <p class="lead">Netflix, Prime Video, CapCut & more – At Affordable Prices</p>
     </div>
   </section>
 
   <!-- About -->
   <section class="container text-center my-5">
-    <h2>About</h2>
-    <p>We provide affordable access to top streaming and editing services. Whether you're a student, creator, or binge-watcher, our subscriptions make premium content budget-friendly and hassle-free. Delivered within minutes via WhatsApp.</p>
+    <h2 class="section-title">About</h2>
+    <p>
+      We provide affordable access to top streaming and editing services. Whether you're a student, creator, or binge-watcher, our subscriptions make premium content budget-friendly and hassle-free.
+    </p>
   </section>
 
   <!-- Netflix Plans -->
   <div class="container my-5">
-    <h2 class="mb-4">🎬 Netflix Packages</h2>
+    <h2 class="section-title">🎬 Netflix Packages</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 h-100">
           <img src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo-768x432.png" alt="Netflix Mobile" class="card-img-top">
-          <h5>Netflix Mobile (1 Screen)</h5>
-          <p>1 Month – Mobile Only</p>
-          <h6>$2</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+I'm+interested+in+Netflix+Mobile+1+Month+Plan." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+          <div class="card-body">
+            <h5 class="card-title">Netflix Mobile (1 Screen)</h5>
+            <p class="card-text">1 Month – Mobile Only</p>
+            <h6 class="fw-bold">$2</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+I'm+interested+in+Netflix+Mobile+1+Month+Plan." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
-          <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCWOA1ZGywLbqmigxE4Qlvuw&psig=AOvVaw1JP48JH3p9IJDicL2yigL6&ust=1751147915724000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODcz7zMko4DFQAAAAAdAAAAABAU" alt="Netflix Standard" class="card-img-top">
-          <h5>Netflix Standard (2 Screens)</h5>
-          <p>1 Month – Full HD</p>
-          <h6>$4</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+I+need+Netflix+Standard+1+Month+Plan." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" alt="Netflix Standard" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Netflix Standard (2 Screens)</h5>
+            <p class="card-text">1 Month – Full HD</p>
+            <h6 class="fw-bold">$4</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+I+need+Netflix+Standard+1+Month+Plan." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4BktiBjIAO9bUOiQmdqRSceQhdRTuy5ESw&s" alt="Netflix Premium" class="card-img-top">
-          <h5>Netflix Premium (4 Screens)</h5>
-          <p>1 Month – 4K Ultra HD</p>
-          <h6>$6</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+I+want+Netflix+Premium+4K+1+Month+Plan." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Premium" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Netflix Premium (4 Screens)</h5>
+            <p class="card-text">1 Month – 4K Ultra HD</p>
+            <h6 class="fw-bold">$6</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+I+want+Netflix+Premium+4K+1+Month+Plan." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
     </div>
@@ -87,30 +120,39 @@
 
   <!-- Prime Video -->
   <div class="container my-5">
-    <h2 class="mb-4">📺 Prime Video</h2>
+    <h2 class="section-title">📺 Prime Video</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card p-3">
-          <h5>Prime Video Monthly</h5>
-          <p>1 Month Access</p>
-          <h6>$3</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+Prime+Video+monthly+plan." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png" alt="Prime Video Monthly" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Prime Video Monthly</h5>
+            <p class="card-text">1 Month Access</p>
+            <h6 class="fw-bold">$3</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+Prime+Video+monthly+plan." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
-          <h5>Prime Video 3 Months</h5>
-          <p>Stream all content for 3 months</p>
-          <h6>$7</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+want+Prime+Video+3+months+plan." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://static.vecteezy.com/system/resources/previews/025/213/584/original/amazon-prime-video-logo-amazon-prime-icon-transparent-free-png.png" alt="Prime Video 3 Months" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Prime Video 3 Months</h5>
+            <p class="card-text">Stream all content for 3 months</p>
+            <h6 class="fw-bold">$7</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+want+Prime+Video+3+months+plan." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
-          <h5>Prime Video + Music Combo</h5>
-          <p>1 Month All Access</p>
-          <h6>$4.5</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+Prime+Video+and+Music+combo." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://logos-world.net/wp-content/uploads/2023/06/Amazon-Music-Logo.png" alt="Prime Video + Music Combo" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Prime Video + Music Combo</h5>
+            <p class="card-text">1 Month All Access</p>
+            <h6 class="fw-bold">$4.5</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+Prime+Video+and+Music+combo." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
     </div>
@@ -118,30 +160,39 @@
 
   <!-- CapCut -->
   <div class="container my-5">
-    <h2 class="mb-4">🎥 CapCut Pro</h2>
+    <h2 class="section-title">🎥 CapCut Pro</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card p-3">
-          <h5>CapCut Pro – 1 Month</h5>
-          <p>Unlocked on your account</p>
-          <h6>$1.5</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+I+want+CapCut+Pro+for+1+month." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://seeklogo.com/images/C/capcut-logo-0F6CBAFBA4-seeklogo.com.png" alt="CapCut Pro 1 Month" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">CapCut Pro – 1 Month</h5>
+            <p class="card-text">Unlocked on your account</p>
+            <h6 class="fw-bold">$1.5</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+I+want+CapCut+Pro+for+1+month." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
-          <h5>CapCut Pro – 3 Months</h5>
-          <p>Best for creators</p>
-          <h6>$4</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+can+you+activate+CapCut+Pro+3+months+for+me%3F" class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://logowik.com/content/uploads/images/1082_vn-video-editor.jpg" alt="CapCut Pro 3 Months" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">CapCut Pro – 3 Months</h5>
+            <p class="card-text">Best for creators</p>
+            <h6 class="fw-bold">$4</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+can+you+activate+CapCut+Pro+3+months+for+me%3F" class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
-          <h5>CapCut + VN Combo</h5>
-          <p>Editing Bundle</p>
-          <h6>$2.5</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+CapCut+%2B+VN+Pro+bundle." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
+        <div class="card p-3 h-100">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/vn-3626632-3029776.png" alt="CapCut + VN Combo" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">CapCut + VN Combo</h5>
+            <p class="card-text">Editing Bundle</p>
+            <h6 class="fw-bold">$2.5</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+CapCut+%2B+VN+Pro+bundle." class="btn btn-whatsapp mt-2 w-100" target="_blank">Buy Now</a>
+          </div>
         </div>
       </div>
     </div>
@@ -154,4 +205,3 @@
 
 </body>
 </html>
-
