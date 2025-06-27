@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Online Subscriptions Store</title>
+  <title>Online Subscriptions Store - Techligo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
-    .bg-primary-red { background-color: #d90429 !important; }
-    .card { border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); image-size:100px}
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-primary-red {
+      background-color: #d90429 !important;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
     .btn-whatsapp {
       background-color: #25D366;
       border: none;
@@ -21,7 +36,7 @@
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Header -->
   <section class="text-center py-5 bg-primary-red text-white">
     <div class="container">
       <h1 class="display-5 fw-bold">Techligo Subscriptions</h1>
@@ -29,48 +44,44 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="container text-center my-5">
     <h2>About</h2>
     <p>We provide affordable access to top streaming and editing services. Whether you're a student, creator, or binge-watcher, our subscriptions make premium content budget-friendly and hassle-free. Delivered within minutes via WhatsApp.</p>
   </section>
 
   <!-- Netflix Plans -->
-  <div class="col-md-4">
+  <div class="container my-5">
+    <h2 class="mb-4">🎬 Netflix Offers</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
         <div class="card shadow">
-          <img src="https://i.pinimg.com/736x/eb/aa/44/ebaa441df578a3e48e26ef1a15a04e3c.jpg" alt="Netflix Offer"   class="card-img-top img-fluid size-110px">
+          <img src="https://i.pinimg.com/736x/eb/aa/44/ebaa441df578a3e48e26ef1a15a04e3c.jpg" alt="Netflix Offer" class="card-img-top">
           <div class="card-body text-center">
             <h5 class="card-title">Netflix Premium</h5>
             <p>4 screens UHD – 1 Month</p>
-            <a href="https://wa.me/923001234567?text=Hi%2C+I%27m+interested+in+Netflix+Premium+offer." class="btn btn-success">Buy Now</a>
+            <h6>$6</h6>
+            <a href="https://wa.me/923000000000?text=Hi%2C+I%27m+interested+in+Netflix+Premium+offer." class="btn btn-whatsapp">Buy Now</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>Netflix Standard (2 Screens)</h5>
           <p>1 Month – Full HD</p>
           <h6>$4</h6>
           <a href="https://wa.me/923000000000?text=Hi%2C+I+want+to+buy+Netflix+Standard.+Share+details+please." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>Netflix Premium (4 Screens)</h5>
-          <p>1 Month – 4K Ultra HD</p>
-          <h6>$6</h6>
-          <a href="https://wa.me/923000000000?text=Hi%2C+I+need+Netflix+Premium.+Can+you+share+info%3F" class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
-        </div>
-      </div>
     </div>
   </div>
 
-  <!-- Prime Video Plans -->
+  <!-- Prime Video -->
   <div class="container my-5">
     <h2 class="mb-4">📺 Prime Video</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>Prime Video Monthly</h5>
           <p>1 Month Access</p>
           <h6>$3</h6>
@@ -78,7 +89,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>Prime Video 3 Months</h5>
           <p>Stream all content for 3 months</p>
           <h6>$7</h6>
@@ -86,7 +97,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>Prime Video + Music Combo</h5>
           <p>1 Month All Access</p>
           <h6>$4.5</h6>
@@ -96,12 +107,12 @@
     </div>
   </div>
 
-  <!-- CapCut Pro Plans -->
+  <!-- CapCut Pro -->
   <div class="container my-5">
     <h2 class="mb-4">🎥 CapCut Pro</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>CapCut Pro – 1 Month</h5>
           <p>Unlocked on your account</p>
           <h6>$1.5</h6>
@@ -109,7 +120,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>CapCut Pro – 3 Months</h5>
           <p>Best for creators</p>
           <h6>$4</h6>
@@ -117,20 +128,12 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-3">
+        <div class="card p-3 shadow">
           <h5>CapCut + VN Combo</h5>
           <p>Editing Bundle</p>
           <h6>$2.5</h6>
           <a href="https://wa.me/923000000000?text=Hi%2C+interested+in+CapCut+%2B+VN+Pro+bundle.%0APlease+give+details." class="btn btn-whatsapp mt-2" target="_blank">Buy Now</a>
         </div>
       </div>
-    </div>
-  </div>
+    </div
 
-  <!-- Footer -->
-  <footer class="text-center py-4 text-muted">
-    &copy; 2024 Techligo. All rights reserved.
-  </footer>
-
-</body>
-</html>
